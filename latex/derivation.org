@@ -1,0 +1,65 @@
+* Strain Partial Relationships (From 2D Strain Block)
+\begin{equation*}
+\epsilon_{x} = \frac{\partial u_x}{\partial x} \qquad
+\epsilon_{y} = \frac{\partial u_y}{\partial y} \qquad
+\gamma_{xy} = \frac{\partial u_y}{\partial x} + \frac{\partial u_x}{\partial y}
+\end{equation*}
+* Differentiation of $\epsilon_x$
+\begin{align*}
+\epsilon_{x} &= \frac{\partial u_x}{\partial x} \\
+\frac{\partial \epsilon_x}{\partial y} &= \frac{\partial^2 u_x}{\partial x \partial y} \\
+\frac{\partial^2 \epsilon_x}{\partial y^2} &= \frac{\partial^3 u_x}{\partial x \partial y^2} \\
+\end{align*}
+* Differentiation of $\epsilon_y$
+\begin{align*}
+\epsilon_{y} &= \frac{\partial u_y}{\partial y} \\
+\frac{\partial \epsilon_y}{\partial x} &= \frac{\partial^2 u_y}{\partial y \partial x} \\
+\frac{\partial^2 \epsilon_y}{\partial x^2} &= \frac{\partial^3 u_y}{\partial y \partial x^2} \\
+\end{align*}
+* Differentiation of $\gamma_{xy}$
+\begin{align*}
+\gamma_{xy} &= \frac{\partial u_y}{\partial x} + \frac{\partial u_x}{\partial y} \\
+\frac{\partial \gamma_{xy}}{\partial x} &= \frac{\partial^2 u_y}{\partial x^2} + \frac{\partial^2 u_x}{\partial x \partial y} \\
+\frac{\partial^2 \gamma_{xy}}{\partial x \partial y} &= \frac{\partial^3 u_y}{\partial x^2 \partial y} + \frac{\partial^3 u_x}{\partial x \partial y^2}
+\end{align*}
+* Substitution of Axial Strain into Shear Strain Equation
+\begin{align*}
+\frac{\partial^2 \gamma_{xy}}{\partial x \partial y} &= \frac{\partial^3 u_y}{\partial x^2 \partial y} + \frac{\partial^3 u_x}{\partial x \partial y^2} \\
+\frac{\partial^2 \gamma_{xy}}{\partial x \partial y} &= \frac{\partial^2 \epsilon_y}{\partial x^2} + \frac{\partial^2 \epsilon_x}{\partial y^2} 
+\end{align*}
+* Stress/Strain Relationships in 2D
+\begin{equation*}
+\epsilon_x = \frac{1}{E}(\sigma_x - \nu \sigma_y)} \qquad
+\epsilon_y = \frac{1}{E}(\sigma_y - \nu \sigma_x)} \qquad
+\gamma_{xy} = \frac{2(1 + \nu)}{E}\tau_{xy}
+\end{equation*}
+* Airys stress function definition
+\begin{equation*}
+\sigma_x = \frac{\partial^2 \phi}{\partial y^2} \qquad 
+\sigma_y = \frac{\partial^2 \phi}{\partial x^2} \qquad
+\tau_{xy} = -\frac{\partial^2 \phi}{\partial x \partial y}
+\end{equation*}
+* Substitution of Airys stress function into Stress / Strain Relationships for Partial Differentiation
+** $\epsilon_x$
+ \begin{align*}
+ \epsilon_x &= \frac{1}{E}\left(\frac{\partial^2 \phi}{\partial y^2} - \nu\frac{\partial^2 \phi}{\partial x^2}\right) \\
+ \frac{\partial \epsilon_x}{\partial y} &= \frac{1}{E} \left(\frac{\partial^3 \phi}{\partial y^3} - \nu \frac{\partial^3\phi}{\partial x^2 \partial y}\right) \\
+ \frac{\partial^2 \epsilon_x}{\partial y^2} &= \frac{1}{E} \left(\frac{\partial^4 \phi}{\partial y^4} - \nu \frac{\partial ^4 \phi}{\partial x^2 \partial y^2}\right)
+ \end{align*}
+** $\epsilon_y$
+\begin{align*}
+ \epsilon_y &= \frac{1}{E}\left(\frac{\partial^2 \phi}{\partial x^2} - \nu\frac{\partial^2 \phi}{\partial y^2}\right) \\
+ \frac{\partial \epsilon_y}{\partial x} &= \frac{1}{E} \left(\frac{\partial^3 \phi}{\partial x^3} - \nu \frac{\partial^3\phi}{\partial y^2 \partial x}\right) \\
+ \frac{\partial^2 \epsilon_y}{\partial x^2} &= \frac{1}{E} \left(\frac{\partial^4 \phi}{\partial x^4} - \nu \frac{\partial ^4 \phi}{\partial y^2 \partial x^2}\right)
+ \end{align*}
+** $\gamma_{xy}$
+
+ \begin{align*}
+\gamma_{xy} &= \frac{2(1 + \nu)}{E}\left(-\frac{\partial^2 \phi}{\partial x \partial y}\right) \\
+\frac{\partial \gamma_{xy}}{\partial x} &=  \frac{2(1 + \nu)}{E}\left(-\frac{\partial^3 \phi}{\partial x^2 \partial y}\right) \\
+\frac{\partial^2 \gamma_{xy}}{\partial x \partial y} &= \frac{2(1 + \nu)}{E}\left(-\frac{\partial^4 \phi}{\partial x^2 \partial^2 y}\right) \\
+\end{align*}1
+
+
+
+
